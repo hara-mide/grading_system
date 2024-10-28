@@ -10,7 +10,7 @@
 }
 body{
     height: 100vh;
-    background: radial-gradient(yellow, #ff4400);
-    /* background: radial-gradient(#f9f6f5 , #101000); */
+    /* background: radial-gradient(yellow, #ff4400); */
+    background: radial-gradient(#f9f6f5 , #101000);
     
 }
