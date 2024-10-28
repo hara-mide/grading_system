@@ -8,9 +8,14 @@
 #big{
     padding-top: 100px;
 }
+#bg{
+    background-image: url(./images/watercolor-795162_1280.jpg);
+}
 body{
     height: 100vh;
     /* background: radial-gradient(yellow, #ff4400); */
+    background-size: cover;
+    background-repeat: no-repeat;
     background: radial-gradient(#f9f6f5 , #101000);
     
 }
