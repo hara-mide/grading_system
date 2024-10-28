@@ -31,20 +31,15 @@
 
     <script>
 
-        // console.log(showResults.innerHTML);
-
-        
         // HTML Grade Checker
 
-        var songExcellent = new Audio('Applause-sound-effect.mp3')
-        var songveryGood = new Audio('Applause-1-Sound-effect.mp3');
-        var songCredit = new Audio('Funke.mp3');
-        var songPassD = new Audio('make-god-no-allow-dem.mp3');
-        var songPassE = new Audio('You-dey-use-your-next-generation-to-play-sound-effect.mp3');
-        var songFail = new Audio('Shey-na-eyes-dey-pain-me-abi-wetin-be-this-comedy-sound-effect.mp3');
-        var songInvalid = new Audio('Wrong-Answer.mp3');
-
-
+        var songExcellent = new Audio('./Audio/Applause-sound-effect.mp3')
+        var songveryGood = new Audio('./Audio/Applause-1-Sound-effect.mp3');
+        var songCredit = new Audio('./Audio/Funke.mp3');
+        var songPassD = new Audio('./Audio/make-god-no-allow-dem.mp3');
+        var songPassE = new Audio('./Audio/You-dey-use-your-next-generation-to-play-sound-effect.mp3');
+        var songFail = new Audio('./Audio/Shey-na-eyes-dey-pain-me-abi-wetin-be-this-comedy-sound-effect.mp3');
+        var songInvalid = new Audio('./Audio/Wrong-Answer.mp3');
 
         function gradeChecker() {
             if (score.value =='') {
@@ -61,42 +56,36 @@
                     showResults.innerHTML = ""
                     showResults.innerHTML = "Grade B - Very good 👍"
                     songveryGood.play();
-                    // console.log('Grade B - Very good');
                     
                 }
                 else if(userScore >= 50 && userScore < 65){
                     showResults.innerHTML = ""
                     showResults.innerHTML = "Grade C - Credit 👌"
                     songCredit.play();
-                    // console.log('Grade C - Credit');
                     
                 }
                 else if(userScore >= 45 && userScore < 50){
                     showResults.innerHTML = ""
                     showResults.innerHTML = "Grade D - Pass 🤦‍♀️"
                     songPassD.play();
-                    // console.log('Grade D - Pass');
                     
                 }
                 else if(userScore >=40 && userScore < 45){
                     showResults.innerHTML = ""
                     showResults.innerHTML = "Grade E - Pass 😒"
                     songPassE.play();
-                    // console.log('Grade E - Pass');
                     
                 }
                 else if(userScore >= 0 && userScore < 40){
                     showResults.innerHTML = ""
                     showResults.innerHTML = "Grade F - Fail 😠"
                     songFail.play();
-                    // console.log('Grade F - Fail');
                     
                 }
                 else{
                     showResults.innerHTML = ""
                     showResults.innerHTML = "Invalid Score 🤬"
                     songInvalid.play();
-                    // console.log('Invalid Score');
                 }
             }
         }
