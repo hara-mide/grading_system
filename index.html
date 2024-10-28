@@ -43,8 +43,7 @@
 
         function gradeChecker() {
             if (score.value =='') {
-                alert('Input Value');
-                ;
+                showResults.innerHTML = 'Invalid score';
             } else{
                 var userScore = Number(score.value) 
                 if (userScore >=75 && userScore <= 100) {
