@@ -2,7 +2,7 @@
     var userScore = ''
     // Audios
     var songExcellent = new Audio('./Audio/Applause-1-Sound-effect.mp3')
-    var songveryGood = new Audio('./Audio/Applause-1-Sound-effect.mp3');
+    var songVeryGood = new Audio('./Audio/Applause-1-Sound-effect.mp3');
     var songCredit = new Audio('./Audio/Funke.mp3');
     var songPassD = new Audio('./Audio/make-god-no-allow-dem.mp3');
     var songPassE = new Audio('./Audio/You-dey-use-your-next-generation-to-play-sound-effect.mp3');
@@ -24,7 +24,7 @@
             else if(userScore >=65 && userScore < 75){
                 showResults.value = ""
                 showResults.value = "Grade B - Very good 👍"
-                songveryGood.play();
+                songVeryGood.play();
                 
             }
             else if(userScore >= 50 && userScore < 65){
